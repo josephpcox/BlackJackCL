@@ -1,3 +1,5 @@
+## Authors: Joseph Cox and Mauzor Ilonzo
+
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
@@ -43,3 +45,39 @@ Use these steps to clone from SourceTree, our client for using the repository co
 4. Open the directory you just created to see your repository’s files.
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+
+---
+
+## General Overview of the Program
+
+We have 4 classes in this Blackjack project: Card, User, Dealer & Game. The card class handles the values of the card. The User class holds a vector of cards which and keeps track of the value of the players’ bets and earnings. 
+The Dealer class is a special User Class which is responsible for creating and managing the deck of cards used in the game and also has a hand to compete with the players. The Game Class handles the basic operations of the game such as handling how the player wants to play their hand, finding who bet the dealer and paying out the players earnings. The Game Class is also responsible of printing displays of the player’s hands, 
+their numerical hand values, their current balances, and both the dealer’s and the user’s hand.
+
+
+---
+
+## Complier Information 
+
+The command to compile our program is: $ g++ -Wall –std=c++14 Card h. User.h Dealer.h Game.h DealerImp.cpp CardImp.cpp UserImp.cpp GameImp.cpp blackJack.cpp –o Blackjack
+The command to run our program is:
+./Blackjack
+
+---
+
+## Operator Overloading Implementation
+
+In our Card Class we overloaded the = operator in order to determine whether two given cards objects are equivalent in value. We used this for our split option but we could not get the split option to work without a segmentation fault.
+Inheritance Implementation
+In our Dealer class we had the class publically inherited the User class so that the Dealer object its own Hand and balance while the object has access to unique functions that the User Objects should not have such as the makeDeck, which creates a 52 card deck that the game will be using.
+
+---
+
+## vector Implementation
+
+Our User class uses a vector of cards to represent a player’s hand and the 52 card deck that will be used in the game. We also have a vector of User objects in our main functions in order to easily implement the player’s turnover.
+const Implementation
+Throughout our classes we often used const in get functions in order to prevent the function from tampering with the variable we were getting which that function.
+static Implementation
+A static unsigned int variable round was implemented in our Game Class. This variable serves to count how many rounds of Blackjack have transpired in this program’s duration.
+
