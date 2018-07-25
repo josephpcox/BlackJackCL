@@ -4,7 +4,7 @@
 *	BlackJack.cpp                                                                                        12/3/17          *
 *                                                                                                                         *
 *                                                                                                                         *
-*	@Def:Main Function to play non graphical version of Jack                                                              *
+*	@Def:Main Function to play non graphical version of Black Jack                                                              *
 ***************************************************************************************************************************/
 #include <string>
 #include <iostream>
