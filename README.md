@@ -18,7 +18,7 @@ The *Dealer* class is a special *User* Class which is responsible for creating a
 
 # Complier Information 
 
-We use the gcc compiler and c++14, to install gcc on a local linux machine use: $sudo apt-get install gcc.
+We use the gcc compiler and c++14, to install gcc on a local linux machine use: **$sudo apt-get install gcc**.
 
 **Mac Users**
 
@@ -37,12 +37,16 @@ You will need to intall the Microsoft Visual Studios IDE from: https://visualstu
 
 ---
 
-# Compile and Run for Linux and Mac 
+# Makefile to Compile and Run for Linux and Mac 
 
-The command to compile our program is: **$g++ -Wall –std=c++14 Card h. User.h Dealer.h Game.h DealerImp.cpp CardImp.cpp UserImp.cpp GameImp.cpp blackJack.cpp –o Blackjack**
+**compile**
+
+To compile and run the program on a Mac or Linux machine open a terminal and navigate to the project folder **$cd < REPOSITORY PATH >**. Inside the reposity path you should see a file called: *makefile* this file will compile the program for you. To compile inside the termianl use **$make** and it will generate an executable called: *blackJack*.
+
+**Run**
 
 The command to run our program is:
-**$./Blackjack**
+**$./blackJack**
 
 ---
 
