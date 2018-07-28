@@ -54,7 +54,7 @@ The command to run our program is:
 
 **Operator Overloading Implementation**
 
-In our *Card* Class we overloaded the *=*(assignment) operator in order to determine whether two given cards objects are equivalent in value. 
+In our *Card* Class we overloaded the *==*(comparison) operator in order to determine whether two given cards objects are equivalent in value. 
 
 **Inheritance Implementation**
 
